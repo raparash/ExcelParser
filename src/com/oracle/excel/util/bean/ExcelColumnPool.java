@@ -23,6 +23,11 @@ public class ExcelColumnPool {
 		return columnPool[columnId];
 	}
 	
+	/**
+	 * Returns ExcelColumnHeader for a given columnName if present
+	 * @param columnName
+	 * @return
+	 */
 	public ExcelColumnHeader getColumn(String columnName){
 		ExcelColumnHeader columnHeader=null;
 		columnName=CommonUtil.safeTrim(columnName).toUpperCase();
